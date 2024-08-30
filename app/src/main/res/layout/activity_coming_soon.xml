@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".welcome.ComingSoonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/purple_700"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:fontFamily="@font/furter"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:text="Visit Guide"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/logouts"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="विजिट स्टार्ट करने के दिशा निर्देश"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="1. आपको विजिट पर आने से एक दिन या उससे पहले जिन कस्टमर के साथ आ रहे हैं उनका फॉर्म भरना होगा"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2. फॉर्म भरने के लिए एजेंट डैशबोर्ड पर PLOT REQUEST FORM  है ,उस पर क्लिक करें"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3. क्लिक करने पर एक फॉर्म खुलेगा उसे आप भरे।  फॉर्म भरने के बाद ADD CUSTOMER पर क्लिक करें"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4. उसके बाद आधार कार्ड और पैन और मीटिंग की फोटो डालनी होंगी , अगर आप फोटो नहीं डालना चाहते हैं तो ऊपर SKIP बटन होगा वहाँ क्लिक करें"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5. इस प्रकार जितने लोग विजिट पर आना चाहते हैं सबका फॉर्म भरा जाएगा"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="6. अब विजिट की कन्फर्मेशन के लिए विजिट का फॉर्म भरना होगा, विजिट के फॉर्म के लिए डैशबोर्ड में सबसे नीचे MY VISITS पर क्लिक करें"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="7. अब वहां नीचे ब्लिंक कर रहे बटन REQUEST NEW TRIP पर क्लिक करना होगा।  वहां क्लिक करने पर जो फॉर्म खुले उसको भरना होगा"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="8. वो फॉर्म भरने के बाद ADD VISITS पर क्लिक करें , क्लिक करने के बाद आपका विजिट फॉर्म भर जाएगा।"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="9. अब कॉल करके रिश्ते के किसी भी ADMIN या कर्मचारी को इन्फॉर्म करें , और विजिट को कन्फर्म करवाएं"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="10. एडमिन के विजिट कन्फर्म करने के बाद आपकी विजिट कन्फर्म हो जायेगी , अब जिस दिन आपको विजिट पर आना है उस दिन MY VISITS खोलें"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="11. अब आपको अपनी सभी विजिट दिखेंगी, जिस दिन की विजिट पर आपको जाना है उस विजिट में TRIP ON /OFF पर क्लिक करें , वहां आपको मैप दिखाई देगा। "
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="12. उस मैप के सबसे नीचे START TRIP बटन पर क्लिक करे।  इससे आपकी विजिट स्टार्ट हो जायेग।  जब आपको अपनी विजिट ख़त्म करनी हो तो वापस उसी मैप पर आकर STOP TRIP बटन पर क्लिक करें "
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".welcome.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/left_arrow"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/p_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:fontFamily="@font/furter"
+            android:gravity="center"
+            android:text="About Company"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hav_med"
+                android:letterSpacing="0.08"
+                android:text="Company Profile"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/hav_med"
+                android:lineSpacingExtra="3dp"
+                android:text="The company was founded by MAY in 2019 located in city of nawabs LUCKNOW. The Company is currently focused on residential projects.Setting new standards in Indian Real Estate, company has earned a stellar reputation for its dedication to the development of superior quality properties distinguished by sophisticated  design and First class amenities in Lucknow.Rishtey Township Pvt. Ltd.  is run by a set of experience Professionals and thrives on achieving its ambitious growth plans. Today our vision for the future is clear.  We want to be the best – that means being your first choice of owning a home or residential plot in Lucknow."
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/hav_med"
+                android:letterSpacing="0.08"
+                android:text="Vision/Mission"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/hav_med"
+                android:lineSpacingExtra="3dp"
+                android:text="Rishtey Township Pvt. Ltd. has been and is continuing to drive value for its associates, customers and employees concerned with to provide end to end solutions and endorse its practice of encouraging innovative ventures with prudence. Customer delight, Excellence, Innovation, Integrity, Trust, Quality and Commitment are the core values of the company with which it looks to the future in great confidence and growth.
+We are a Real Estate Solution Company where we create the difference in the way we build our site or projects and the way we build our relationship with customers.We believe in offering the best of services to our customers and building long-term relationship with them.\nOur foremost effort is to build new India and become the world’s most renowned real estate company. We want to create a separate niche for ourselves in real estate industry as a credible, robust and forward-looking business entity. We are constantly working to create benchmark of excellent architecture and facilities."
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/hav_med"
+                android:letterSpacing="0.08"
+                android:text="Our Team"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/hav_med"
+                android:lineSpacingExtra="3dp"
+                android:text="At Rishtey Township Pvt. Ltd.  each employee  is our most prized and cherished asset. Our people are the building blocks of this company  and we value each one of them equally. The power of expectations cannot be overestimated. our expectations of  people and their expectations of themselves are the key factors in how well  people perform at work. This principle determines the performance expectations and potential performance improvement at work.Our employees are our core strength. We have always respected hard work, knowledge and commitment. The company’s evolving culture and value system provides an ideal platform for employees to grow and outperform."
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

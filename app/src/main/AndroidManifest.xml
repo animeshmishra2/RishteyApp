@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rishtey.agentapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"
+        tools:node="remove" />
+
+    <application
+        android:name="com.guruvardaan.ghargharsurvey.config.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GharGharSurvey">
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.voucher.VoucherWithdrawActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.voucher.VoucherAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.AdminComplaintsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.TotalTransferredActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.TodayTransferredActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.TotalChatActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.TodayChatActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.FourLakhActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.NewOfferActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.ViewChatImageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.TransferActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.TeamChatActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.UserChatActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.chat.ChatDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.LatestOfferActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.SettlementActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.ViewSettlementActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.BaseActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.UpdateAgentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.FindTextActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AgentBusinessActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.CheckDateActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.ChequeStatusActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.CustomerDateActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AllVoucherActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.AgentVoucherActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.TeamVoucherActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.VisitOpenActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.CompleteAgentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.AccountDetailsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.SelectAllCustomerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.SuccessActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.SelectAgentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.CreateCustomersActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.DirectPropertySaleActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.DirectAgentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AddNewAgentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AddNewClientActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.CustomerSelectActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.SelectPropertyActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.MyReceiptActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.SelectDateActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <service
+            android:name="com.guruvardaan.ghargharsurvey.visits.LocationUpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.PayCustomerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.SelectOfferActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.PayDetailsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.PayInstallmentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.CustomerReceiptActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.PayForCustomerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.rishtey.agentapp.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- ressource file to create -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AgentReceiptActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.InstallmentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.CustomerPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AgentPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.ViewRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.MyPlotRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.PlotRemarkActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AgentPlotRequest"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AllPlotRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.CustomerPlotsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.MainCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.CustomerDashboard"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.plots.AllRegistryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GharGharSurvey.NoActionBar1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.TermsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.RefundActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AgentCheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.customers.PassbookCustmers"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.ComingSoonActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.RegistryRequest"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.AllTripCustomers"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.plots.SelectBlockActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.plots.PlotRequestForm"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.SelfStatement"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.TeamStatement"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.DownloadsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.UpdateDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.BankDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.CustomerPassActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.SelectServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.SelectBankActvity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.SelectCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.CustomerPassbook"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AgentPassActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.PassbookTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AgentPassbook"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.SelectAddress"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.plots.PlotsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.plots.ViewMapActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.AddClientActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.AddAgentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.SelectRank"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.plots.BlockActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.plots.OurPropertiesActivity"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD15e-7OZrJ1_yNgsIrT9oQQ4_A6VSAzXI" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.VisitMapActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.ViewVisitActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.GalleryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.ViewImageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.OffersActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.AddCarActivity"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.UploadRegistry"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.MyDownlines"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.ContactUsActivity"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.SelectCustomers"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.TodayBusiness"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.plots.UploadAadharActivity"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.MyCustomers"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.VehicleType"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.LocationAutocomplete"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.AddCustomerActivity"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.AddTripActivity"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.MyVisitsActivity"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.AgentActivity"
+            android:configChanges="locale"
+            android:exported="false" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.GroupAttendance"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.TeamList"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.SurveyForm"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.TeamDashboard"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.SupervisorDashboard"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.AgencyDashbard"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.agent.TotalBusiness"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.SelectCarModel"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.SelectProfession"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.SelectOccupation"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.visits.SelectCarActivity"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name="com.guruvardaan.ghargharsurvey.welcome.MainActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+
+        <receiver
+            android:name="com.guruvardaan.ghargharsurvey.agent.DownloadReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.guruvardaan.ghargharsurvey.fcm.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" /> <!-- ./Firebase Notifications -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/noti_icon" />
+    </application>
+
+</manifest>

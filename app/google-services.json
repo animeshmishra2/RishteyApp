@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "799447519208",
+    "project_id": "rishtey-township",
+    "storage_bucket": "rishtey-township.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799447519208:android:4ac1b4e2bb9d53ca185e5d",
+        "android_client_info": {
+          "package_name": "com.rishtey.agentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799447519208-h8dt77i3m11arp05e5u6hn5kd883dp9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACXOsbg1tqtKkXlF3c0kmqVTUF0BPhXUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799447519208-h8dt77i3m11arp05e5u6hn5kd883dp9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
